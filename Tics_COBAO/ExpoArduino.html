@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Expo Arduino</title>
+<!-- Bootstrap 5-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<!-- ICONOS DE BOTSTRAP -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <!-- Tipografia de letra -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="ardu.css">    
+</head>
+<body>
+    <!-- ID Particles.js -->
+    <div id="particles-js"></div>
+    <!-- Pagina -->
+    <header class="border">
+      <i class="bi bi-robot"></i>
+      <h1>Expo Arduino</h1>
+    </header>
+    <section>
+      <article class="contenedor">
+       <h2 class="tite">¿Como Funciona?</h2>
+       <h4>Arduino es una placa de codigo abierto  la  cual la pudes usar para diferentes propositos y conectarlo
+        a diferentes sensores y pudes crear sistemas basicos hasta sistemas complejos, arduino se pude ocupar incluso en el 
+        mundo del hacking mediante diferentes herramientas.
+       </h4>
+      </article>
+      <article>
+        <h3>
+          Ejemplo de codigo de arduino:
+        </h3>
+        <div class="codigo">
+            <!-- Forma #1 -->
+          <p id="titulo">importa las librerias DHT // <span class="typed"></span></p>
+          <br>#include DHT.h // importa la Librerias DHT
+          <br> #include DHT_U.h
+          <br> int SENSOR = 2; // pin DATA de DHT22 a pin digital 2
+          <br> int TEMPERATURA;
+          <br> int HUMEDAD;
+          <br> DHT dht(SENSOR, DHT11); // creacion del objeto, cambiar segundo parametro
+          <br>       // por DHT11 si se utiliza en lugar del DHT22
+          <br> void setup(){
+            <br> Serial.begin(9600); // inicializacion de monitor serial
+            <br> dht.begin(); // inicializacion de sensor
+            <br>}
+            <br>void loop(){
+              <br>TEMPERATURA = dht.readTemperature(); // obtencion de valor de temperatura
+              <br>  HUMEDAD = dht.readHumidity(); // obtención de valor de humedad
+              <br>Serial.print("Temperatura: "); // escritura en monitor serial de los valores
+              <br>Serial.print(TEMPERATURA);
+              <br>Serial.print(" Humedad: ");
+              <br>Serial.println(HUMEDAD);
+              <br>delay (500);
+              <br> }
+        </div>
+      </article>
+    </section>
+    <section>
+      <article class="contenedor">
+        <h2>Proyectos de Tics</h2>
+        <h3>Estos son algunos proyectos que se han hecho en la capacitacion de Tics</h3>
+      </article>
+    </section>
+    <section>
+      <article class="contenedor">
+        <h2>¿Como nos puede servir?</h2>
+        <h4>Arduino nos pude ayudar con diferentes cosas las cuales nosotros le damos el enfoque en el que lo necesitamos como por ejemplo
+          un sistema de alarma, un carro a control remoto, sistema que mida la temperatura del hambiente o el ph del suelo.
+        </h4>
+      </article>
+    </section>
+    <!-- JS Particles.js -->
+    <script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--JS Letras-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/Expo.js"></script>
+  </body>
+</html>

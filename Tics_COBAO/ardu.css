@@ -1,0 +1,53 @@
+body {
+    background-color:#000;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.border {
+    color: white;
+    background: transparent;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 2rem;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.border i {
+    font-size: 3rem;
+  color: transparent;
+  padding: 8px 19px;
+  border-radius: 50%; 
+}
+
+.codigo {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(46, 184, 231);
+    padding: 1rem 1rem;
+    font-family: 'Chakra Petch', sans-serif;
+    background: transparent;
+}
+
+.contenedor{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem .5rem;
+    color: white;
+
+}
+
+.tite {
+    padding: 1.5rem;
+    color: white;
+    background: transparent;
+    font-size: 1.7rem;
+}

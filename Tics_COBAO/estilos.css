@@ -1,0 +1,232 @@
+html{
+  font-family: 'Comfortaa', 'cursive';
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+header {
+  text-align: center;
+  background-color: black ;
+  color: white;
+  padding: 2rem 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+section article {
+  text-align: center;
+  transition: box-shadow 0.3s  ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+section article:hover {
+  box-shadow: 0 0.2rem 0.4rem rgb(0, 0, 0, 0.3);
+}
+
+
+section article h2, section article p {
+margin: 1rem;
+}
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2.5rem;
+  background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
+}
+/* Sobre tics */
+.sobre-mi{
+  height: 600px;
+  padding: 20px;
+}
+
+.sobre-mi .contenedor {
+  text-align: center;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Comfortaa', 'cursive';
+}
+.seccion-texto {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Comfortaa', 'cursive' ;
+}
+
+.contenedor-texto .tec {
+  font-weight: bold;
+  color: red;
+  font-size: normal;
+}
+/*tics PROYECTOS */
+.exp {
+  padding: 40px 40px 60px 40px;
+}
+.exp i {
+  font-size: 2.5rem;
+  color: black;
+  padding: 8px 19px;
+  border-radius: 50%; 
+}
+.titulo-ter {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.tex-center {
+text-align: center;
+}
+.exp .columna {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+.exp .columna:hover {
+  color: white;
+  background-color: black;
+}
+.exp .columna:hover i {
+color: white;
+}
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+}
+
+/* Contacto */
+
+.contacto .conteiner {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  background-color: rgb(42, 22, 94);
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: black;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 15px;
+  margin-bottom: 30px;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #ad4646;
+  padding: 20px;
+}  
+/* CAFETERA ANIMACION */
